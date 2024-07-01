@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(assets/bg-library.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(assets/bg-library.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -19,4 +19,12 @@ input {
 #book {
     background: transparent;
     backdrop-filter: blur(15px);
+}
+
+#card-book {
+    transition: transform .2s;
+}
+
+#card-book:hover {
+    transform: scale(1.05);
 }

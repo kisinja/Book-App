@@ -14,8 +14,8 @@ const BookSingleCard = ({ item }) => {
 
 
     return (
-        <div className="border-2 border-gray-500 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl w-[250px]" key={item._id}>
-            <h2 className="absolute top-1 right-2 px-4 py-1 bg-red 300 rounded-lg">{item.publishYear}</h2>
+        <div className="rounded-lg px-4 py-2 m-4 relative shadow-xl w-[250px] bg-transparent backdrop-blur-[15px]" key={item._id} id='card-book'>
+            <h2 className="absolute top-1 right-2 px-4 py-1 bg-red 300 rounded-lg text-red-700 font-semibold bg-black">{item.publishYear}</h2>
 
             <img src={item.img} alt={item.title} className="w-full h-[200px] object-cover rounded-lg" />
             <div className="flex justify-start items-center gap-x-2">

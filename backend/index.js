@@ -12,7 +12,7 @@ app.use(cors(
         allowedHeaders: ['Content-Type']
     }
 ));
-app.use(morgan('dev'));
+app.use(morgan('common'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
