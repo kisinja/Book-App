@@ -6,6 +6,7 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineDelete } from 'react-icons/md';
 import { useState } from 'react';
 import BookModal from './BookModal';
+import PropTypes from 'prop-types';
 
 
 const BookSingleCard = ({ item }) => {
@@ -52,4 +53,12 @@ const BookSingleCard = ({ item }) => {
     );
 };
 
-export default BookSingleCard
+BookSingleCard.propTypes = {
+    item: PropTypes.object.isRequired
+};
+
+BookSingleCard.defaultProps = {
+    item: {}
+};
+
+export default BookSingleCard;
