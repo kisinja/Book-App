@@ -16,7 +16,7 @@ const EditBook = () => {
     const [price, setPrice] = useState("");
     const [img, setImg] = useState("");
 
-    const BASE_URL = 'http://localhost:5000/api';
+    const BASE_URL = 'http://localhost:6700/api/tasks';
 
     const navigate = useNavigate();
 
@@ -27,7 +27,7 @@ const EditBook = () => {
     useEffect(() => {
         setLoading(true);
 
-        axios.get(`${BASE_URL}/books/${id}`)
+        axios.get(`${BASE_URL}/${id}`)
             .then((res) => {
                 setTitle(res.data.title);
                 setAuthor(res.data.author);
